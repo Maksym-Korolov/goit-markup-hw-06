@@ -64,6 +64,9 @@ img {
     background-color: var(--color-background-secondary);
     font-size: 14px;
 }  
+.footer>.container{
+    display: flex;
+}
 .link {
     text-decoration: none;
     color: var(--color-heading);
@@ -670,6 +673,44 @@ textarea::placeholder {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.news-text{
+    display: block;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-heading);
+    color: var(--color-white);
+    line-height: 1.1428;
+    margin-bottom: 20px;
+}
+.input-button-comb{
+    display: flex;
+}
+.news-input{
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    height: 50px;
+    min-width: 358px;
+}
+.news-form-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
     padding: 10px 52px;
     font-weight: 700;
     font-size: 16px;

@@ -356,32 +356,34 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address container">
-        <div class="footer-address">
-          <a href="./index.html" class="logo link"
-            ><span class="web">Web</span
-            ><span class="studio-footer">Studio</span></a
-          >
-          <ul class="address-list list">
-            <li>
-              <a
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="link map"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <address class="address">
+          <div class="footer-address">
+            <a href="./index.html" class="logo link"
+              ><span class="web">Web</span
+              ><span class="studio-footer">Studio</span></a
+            >
+            <ul class="address-list list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link map"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </address>
         <div class="footer-socials">
           <span>Приєднуйтесь</span>
           <ul class="socials-list-footer list">
@@ -415,7 +417,24 @@
             </li>
           </ul>
         </div>
-      </address>
+        <div class="footer-newsletter">
+          <form name="news-form">
+            <label for="news-label" class="news-label">
+              <span class="news-text">Підпишіться на розсилку</span>
+            </label>
+            <div class="input-button-comb">
+              <input
+                id="news-label"
+                type="email"
+                name="email"
+                class="news-input"
+                placeholder="E-mail"
+              />
+              <button class="news-form-button">Підписатися</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
