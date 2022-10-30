@@ -19,6 +19,7 @@
     --background-color-overlay: rgba(33, 150, 243, 0.9); 
     --background-color-backdrop: rgba(0, 0, 0, 0.2);
     --background-color-description: rgba(47, 48, 58, 0.8);
+    --border-color-form: rgba(33, 33, 33, 0.2);
 }
 body {
     font-family: var(--ff-roboto);
@@ -524,7 +525,7 @@ nav {
     top: 50%;
     min-width: 528px;
     min-height: 581px;
-    padding: 15px;
+    padding: 40px;
     background-color: var(--color-white);
     
     transform: translate(-50%, -50%) scale(1);
@@ -552,3 +553,37 @@ nav {
     margin-top: 8px;
     margin-right: 8px;
 }
+.order-heading {
+    color: var(--color-heading);
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.order-field {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+.order-label {
+    position: absolute;
+    left: 0;
+    top: -18px;
+
+    font-size: 12px;
+    line-height: 1.1667;
+    letter-spacing: 0.01em;
+    color: var(--color-primary);
+}
+.order-input{
+    border: 1px solid var(--border-color-form);
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+}
+

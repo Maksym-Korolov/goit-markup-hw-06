@@ -424,6 +424,30 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <form name="order-form" class="order-form" autocomplete="off">
+          <h2 class="order-heading">Залиште свої дані, ми вам передзвонимо</h2>
+          <label class="order-field">
+            <span class="order-label">Ім'я</span>
+            <input type="text" name="name" class="order-input" />
+          </label>
+          <label class="order-field">
+            <span class="order-label">Телефон</span>
+            <input type="tel" name="telephone" class="order-input" />
+          </label>
+          <label class="order-field">
+            <span class="order-label">Пошта</span>
+            <input type="email" name="email" class="order-input" />
+          </label>
+          <label class="order-field">
+            <span class="order-label">Коментар</span>
+            <textarea
+              name="comment"
+              cols="30"
+              rows="10"
+              class="order-input"
+            ></textarea>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
