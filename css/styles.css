@@ -619,10 +619,6 @@ textarea::placeholder {
     line-height: 1.1667;
     letter-spacing: 0.01em;
 }
-/* .form-control {
-    position: relative;
-    width: 100%;
-} */
 .input-icon {
     position: absolute;
     top: 50%;
