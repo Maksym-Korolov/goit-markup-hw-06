@@ -450,7 +450,8 @@
         </button>
         <form name="order-form" class="order-form" autocomplete="off">
           <h2 class="order-heading">Залиште свої дані, ми вам передзвонимо</h2>
-          <div class="order-label">
+          <label for="name" class="order-text">Ім'я</label>
+          <div class="input-control">
               <input
                 id="name"
                 type="text"
@@ -458,13 +459,12 @@
                 class="order-input"
                 placeholder=" "
               />
-              <label for="name" class="order-text">Ім'я</label>
               <svg width="18" height="18" class="input-icon">
                 <use href="./images/symbol-defs.svg#icon-person"></use>
               </svg>
           </div>
-          <div class="order-label">
-            <label for="telephone" class="order-text">Телефон</label>
+          <label for="telephone" class="order-text">Телефон</label>
+          <div class="input-control">
               <input
                 id="telephone"
                 type="tel"
@@ -476,8 +476,8 @@
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
           </div>
-          <div class="order-label">
-            <label for="mail" class="order-text">Пошта</label>
+          <label for="mail" class="order-text">Пошта</label>
+          <div class="input-control">
               <input
                 id="mail"
                 type="email"
@@ -489,7 +489,6 @@
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
           </div>
-          <div class="order-label">
             <label for="comment" class="order-text">Коментар</label>
             <textarea
               id="comment"
@@ -499,7 +498,6 @@
               class=" order-input textarea"
               placeholder="Введіть текст"
             ></textarea>
-          </div>
           <input id="terms-checkbox" type="checkbox" class="checkbox-input" />
           <label for="terms-checkbox" class="checkbox-label"
             >Погоджуюся з розсилкою та приймаю

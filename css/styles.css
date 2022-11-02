@@ -526,13 +526,15 @@ nav {
     z-index: 2;
     
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     position: absolute;
     left: 50%;
     top: 50%;
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
     padding: 40px;
     background-color: var(--color-white);
@@ -577,25 +579,19 @@ nav {
     text-align: center;
     margin-bottom: 30px;
 }
-.order-label {
-    position: relative;
-    display: block;
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 28px;
-}
 .order-text {
-    position: absolute;
-    top: -18px;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    margin-bottom: 4px;
 
     font-size: 12px;
     line-height: 1.1667;
     letter-spacing: 0.01em;
     color: var(--color-primary);
+}
+.input-control {
+    position: relative;
+
+    margin-bottom: 10px;
 }
 .order-input{
     width: 100%;
@@ -603,27 +599,31 @@ nav {
     padding: 12px 12px 12px 42px;
     border: 1px solid var(--border-color-form);
     border-radius: 4px;
+    cursor: pointer;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-input:focus{
     border-color: var(--color-accent);
     outline: none;
-}
-.textarea {
-    resize: vertical;
-    padding: 12px 16px;
-    height: 120px;
-}
-textarea::placeholder {
-    color: var(--placeholder-text-color);
-    font-size: 12px;
-    line-height: 1.1667;
-    letter-spacing: 0.01em;
 }
 .input-icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%)
+}
+.textarea {
+    resize: none;
+    padding: 12px 16px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+textarea::placeholder {
+    color: var(--placeholder-text-color);
+    font-size: 12px;
+    line-height: 1.1667;
+    letter-spacing: 0.01em;
 }
 .order-label:focus-within .input-icon{
     fill: var(--color-accent);
@@ -636,6 +636,8 @@ textarea::placeholder {
 .checkbox-label{
     position: relative;
     padding-left: 24px;
+    font-size: 14px;
+    line-height: 1.71;
 }
 .checkbox-label::before{
     content: '';
@@ -712,6 +714,7 @@ textarea::placeholder {
     height: 50px;
     min-width: 358px;
     color: var(--color-white);
+    outline: none;
 }
 .news-form-button {
     align-items: center;
@@ -735,3 +738,5 @@ textarea::placeholder {
     fill: var(--color-white);
     margin-left: 10px;
 }
+
+
